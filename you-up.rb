@@ -5,11 +5,11 @@
 class YouUp < Formula
   desc ""
   homepage "https://github.com/guifeliper/you-up"
-  version "0.2"
+  version "0.3"
 
   on_macos do
-    url "https://github.com/guifeliper/you-up/releases/download/v0.2/you-up_0.2_darwin_all.tar.gz"
-    sha256 "89164b5dfa934f255a76dc668e0aa8db9162fb72522a6701a22d6f761b257e81"
+    url "https://github.com/guifeliper/you-up/releases/download/v0.3/you-up_0.3_darwin_all.tar.gz"
+    sha256 "23e56144bd1f6ddddfb4110bdd192cdaa7715fde738856f51857f8f04a748bc5"
 
     def install
       bin.install "you-up"
@@ -18,16 +18,16 @@ class YouUp < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/guifeliper/you-up/releases/download/v0.2/you-up_0.2_linux_arm64.tar.gz"
-      sha256 "1c00d01cc642a170ed83692635912d4fc73d081bab5e753372aea43755dab285"
+      url "https://github.com/guifeliper/you-up/releases/download/v0.3/you-up_0.3_linux_arm64.tar.gz"
+      sha256 "7cb84183f2aeb23a7ec0c95b5795d160a2b0db11dcd5379dc83216168b3de540"
 
       def install
         bin.install "you-up"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/guifeliper/you-up/releases/download/v0.2/you-up_0.2_linux_amd64.tar.gz"
-      sha256 "bb3e4a519a9ab66b4fae37f1ce70fb35dee86cff10740ec7117f31c037938b46"
+      url "https://github.com/guifeliper/you-up/releases/download/v0.3/you-up_0.3_linux_amd64.tar.gz"
+      sha256 "8fbc469ccaa803b1c60ef34b01d1d2ff177069a7e826d118f52de4717837e8ec"
 
       def install
         bin.install "you-up"
